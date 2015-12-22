@@ -1,0 +1,85 @@
+Source: python-rjsmin
+Section: python
+Priority: optional
+Maintainer: PKG OpenStack <openstack-devel@lists.alioth.debian.org>
+Uploaders: Thomas Goirand <zigo@debian.org>
+Build-Depends: debhelper (>= 9),
+               dh-python,
+               python-setuptools,
+               python-all,
+               python3-setuptools,
+               python3-all
+Standards-Version: 3.9.6
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=openstack/python-rjsmin.git
+Vcs-Git: git://anonscm.debian.org/openstack/python-rjsmin.git
+Homepage: http://opensource.perlig.de/rjsmin/
+
+Package: python-rjsmin
+Architecture: all
+Depends: ${python:Depends}, ${misc:Depends}
+Description: javascript minifier written in python - Python 2.7
+ rJSmin is a javascript minifier written in python. The minifier is based on
+ the semantics of jsmin.c by Douglas Crockford.
+ .
+ The module is a re-implementation aiming for speed, so it can be used at
+ runtime (rather than during a preprocessing step). Usually it produces the
+ same results as the original jsmin.c. It differs in the following ways:
+ .
+  - there is no error detection: unterminated string, regex and comment
+    literals are treated as regular javascript code and minified as such.
+  - Control characters inside string and regex literals are left untouched; they
+    are not converted to spaces (nor to)
+  - Newline characters are not allowed inside string and regex literals, except
+    for line continuations in string literals (ECMA-5).
+  - "return /regex/" is recognized correctly.
+  - Line terminators after regex literals are handled more sensibly
+  - "+ +" and "- -" sequences are not collapsed to '++' or '--'
+  - Newlines before ! operators are removed more sensibly
+  - Comments starting with an exclamation mark (``!``) can be kept optionally
+  - rJSmin does not handle streams, but only complete strings. (However, the
+    module provides a "streamy" interface).
+ .
+ Since most parts of the logic are handled by the regex engine it's way faster
+ than the original python port of ``jsmin.c`` by Baruch Even. The speed factor
+ varies between about 6 and 55 depending on input and python version (it gets
+ faster the more compressed the input already is).  Compared to the
+ speed-refactored python port by Dave St.Germain the performance gain is less
+ dramatic but still between 3 and 50 (for huge inputs)). See the
+ docs/BENCHMARKS file for details.
+ .
+ This package contains the Python 2.7 module.
+
+Package: python3-rjsmin
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends}
+Description: javascript minifier written in python - Python 3.x
+ rJSmin is a javascript minifier written in python. The minifier is based on
+ the semantics of jsmin.c by Douglas Crockford.
+ .
+ The module is a re-implementation aiming for speed, so it can be used at
+ runtime (rather than during a preprocessing step). Usually it produces the
+ same results as the original jsmin.c. It differs in the following ways:
+ .
+  - there is no error detection: unterminated string, regex and comment
+    literals are treated as regular javascript code and minified as such.
+  - Control characters inside string and regex literals are left untouched; they
+    are not converted to spaces (nor to)
+  - Newline characters are not allowed inside string and regex literals, except
+    for line continuations in string literals (ECMA-5).
+  - "return /regex/" is recognized correctly.
+  - Line terminators after regex literals are handled more sensibly
+  - "+ +" and "- -" sequences are not collapsed to '++' or '--'
+  - Newlines before ! operators are removed more sensibly
+  - Comments starting with an exclamation mark (``!``) can be kept optionally
+  - rJSmin does not handle streams, but only complete strings. (However, the
+    module provides a "streamy" interface).
+ .
+ Since most parts of the logic are handled by the regex engine it's way faster
+ than the original python port of ``jsmin.c`` by Baruch Even. The speed factor
+ varies between about 6 and 55 depending on input and python version (it gets
+ faster the more compressed the input already is).  Compared to the
+ speed-refactored python port by Dave St.Germain the performance gain is less
+ dramatic but still between 3 and 50 (for huge inputs)). See the
+ docs/BENCHMARKS file for details.
+ .
+ This package contains the Python 3.x module.
