@@ -6,16 +6,16 @@ Uploaders: Thomas Goirand <zigo@debian.org>
 Build-Depends: debhelper (>= 9),
                dh-python,
                python-setuptools,
-               python-all,
+               python-all-dev,
                python3-setuptools,
-               python3-all
+               python3-all-dev,
 Standards-Version: 3.9.6
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=openstack/python-rjsmin.git
 Vcs-Git: git://anonscm.debian.org/openstack/python-rjsmin.git
 Homepage: http://opensource.perlig.de/rjsmin/
 
 Package: python-rjsmin
-Architecture: all
+Architecture: any
 Depends: ${python:Depends}, ${misc:Depends}
 Description: javascript minifier written in python - Python 2.7
  rJSmin is a javascript minifier written in python. The minifier is based on
@@ -50,7 +50,7 @@ Description: javascript minifier written in python - Python 2.7
  This package contains the Python 2.7 module.
 
 Package: python3-rjsmin
-Architecture: all
+Architecture: any
 Depends: ${python3:Depends}, ${misc:Depends}
 Description: javascript minifier written in python - Python 3.x
  rJSmin is a javascript minifier written in python. The minifier is based on
