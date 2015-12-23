@@ -10,11 +10,11 @@ Files: *
 Copyright: (c) 2011-2015, Andre Malo
 License: Apache-2
 
-File: bench/bootstrap.js
+Files: bench/bootstrap.js
 Copyright: (c) 2012, Twitter, Inc.
 License: Apache-2
 
-File: bench/DateTimeShortcuts.js
+Files: bench/DateTimeShortcuts.js
 Copyright: (c) Django Software Foundation and individual contributors.
 License: BSD-3-clause
  Taken from django release 1.8.5
@@ -46,23 +46,23 @@ License: BSD-3-clause
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-File: bench/jquery-1.7.1.js
+Files: bench/jquery-1.7.1.js
 Copyright: 2011, John Resig
 License: Expat
 
-File: bench/jsmin_2_0_9.py
+Files: bench/jsmin_2_0_9.py
 Copyright: (c) 2013 Dave St.Germain
 License: Expat
 
-File: bench/knockout-2.0.0.js
+Files: bench/knockout-2.0.0.js
 Copyright: (c) Steven Sanderson
 License: Expat
 
-File: bench/markermanager.js
+Files: bench/markermanager.js
 Copyright: (c) 2007 Google Inc.
 License: Apache-2
 
-File: bench/apiviewer.js
+Files: bench/apiviewer.js
 Copyright: LGPL-2
 License:
  This file is part of the qooxdoo framework.
