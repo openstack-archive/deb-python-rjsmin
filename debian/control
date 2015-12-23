@@ -17,8 +17,8 @@ Homepage: http://opensource.perlig.de/rjsmin/
 Package: python-rjsmin
 Architecture: any
 Depends: ${python:Depends}, ${misc:Depends}
-Description: javascript minifier written in python - Python 2.7
- rJSmin is a javascript minifier written in python. The minifier is based on
+Description: javascript minifier written in Python - Python 2.7
+ rJSmin is a javascript minifier written in Python. The minifier is based on
  the semantics of jsmin.c by Douglas Crockford.
  .
  The module is a re-implementation aiming for speed, so it can be used at
@@ -35,15 +35,15 @@ Description: javascript minifier written in python - Python 2.7
   - Line terminators after regex literals are handled more sensibly
   - "+ +" and "- -" sequences are not collapsed to '++' or '--'
   - Newlines before ! operators are removed more sensibly
-  - Comments starting with an exclamation mark (``!``) can be kept optionally
+  - Comments starting with an exclamation mark (!) can be kept optionally
   - rJSmin does not handle streams, but only complete strings. (However, the
     module provides a "streamy" interface).
  .
  Since most parts of the logic are handled by the regex engine it's way faster
- than the original python port of ``jsmin.c`` by Baruch Even. The speed factor
- varies between about 6 and 55 depending on input and python version (it gets
+ than the original Python port of jsmin.c by Baruch Even. The speed factor
+ varies between about 6 and 55 depending on input and Python version (it gets
  faster the more compressed the input already is).  Compared to the
- speed-refactored python port by Dave St.Germain the performance gain is less
+ speed-refactored Python port by Dave St.Germain the performance gain is less
  dramatic but still between 3 and 50 (for huge inputs)). See the
  docs/BENCHMARKS file for details.
  .
@@ -52,8 +52,8 @@ Description: javascript minifier written in python - Python 2.7
 Package: python3-rjsmin
 Architecture: any
 Depends: ${python3:Depends}, ${misc:Depends}
-Description: javascript minifier written in python - Python 3.x
- rJSmin is a javascript minifier written in python. The minifier is based on
+Description: javascript minifier written in Python - Python 3.x
+ rJSmin is a javascript minifier written in Python. The minifier is based on
  the semantics of jsmin.c by Douglas Crockford.
  .
  The module is a re-implementation aiming for speed, so it can be used at
@@ -70,15 +70,15 @@ Description: javascript minifier written in python - Python 3.x
   - Line terminators after regex literals are handled more sensibly
   - "+ +" and "- -" sequences are not collapsed to '++' or '--'
   - Newlines before ! operators are removed more sensibly
-  - Comments starting with an exclamation mark (``!``) can be kept optionally
+  - Comments starting with an exclamation mark (!) can be kept optionally
   - rJSmin does not handle streams, but only complete strings. (However, the
     module provides a "streamy" interface).
  .
  Since most parts of the logic are handled by the regex engine it's way faster
- than the original python port of ``jsmin.c`` by Baruch Even. The speed factor
- varies between about 6 and 55 depending on input and python version (it gets
+ than the original Python port of jsmin.c by Baruch Even. The speed factor
+ varies between about 6 and 55 depending on input and Python version (it gets
  faster the more compressed the input already is).  Compared to the
- speed-refactored python port by Dave St.Germain the performance gain is less
+ speed-refactored Python port by Dave St.Germain the performance gain is less
  dramatic but still between 3 and 50 (for huge inputs)). See the
  docs/BENCHMARKS file for details.
  .
