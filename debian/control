@@ -2,13 +2,13 @@ Source: python-rjsmin
 Section: python
 Priority: optional
 Maintainer: PKG OpenStack <openstack-devel@lists.alioth.debian.org>
-Uploaders: Thomas Goirand <zigo@debian.org>
+Uploaders: Thomas Goirand <zigo@debian.org>,
 Build-Depends: debhelper (>= 9),
                dh-python,
-               python-setuptools,
                python-all-dev,
-               python3-setuptools,
+               python-setuptools,
                python3-all-dev,
+               python3-setuptools,
 Standards-Version: 3.9.6
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=openstack/python-rjsmin.git
 Vcs-Git: git://anonscm.debian.org/openstack/python-rjsmin.git
@@ -16,7 +16,9 @@ Homepage: http://opensource.perlig.de/rjsmin/
 
 Package: python-rjsmin
 Architecture: any
-Depends: ${python:Depends}, ${misc:Depends}
+Depends: ${misc:Depends},
+         ${python:Depends},
+         ${shlibs:Depends},
 Description: javascript minifier written in Python - Python 2.7
  rJSmin is a javascript minifier written in Python. The minifier is based on
  the semantics of jsmin.c by Douglas Crockford.
@@ -51,7 +53,9 @@ Description: javascript minifier written in Python - Python 2.7
 
 Package: python3-rjsmin
 Architecture: any
-Depends: ${python3:Depends}, ${misc:Depends}
+Depends: ${misc:Depends},
+         ${python3:Depends},
+         ${shlibs:Depends},
 Description: javascript minifier written in Python - Python 3.x
  rJSmin is a javascript minifier written in Python. The minifier is based on
  the semantics of jsmin.c by Douglas Crockford.
