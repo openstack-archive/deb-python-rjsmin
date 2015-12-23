@@ -1,4 +1,4 @@
-python-rjsmin (1.0.12-1) unstable; urgency=medium
+python-rjsmin (1.0.12+dfsg1-1) unstable; urgency=medium
 
   * Initial release. (Closes: #808800)
 

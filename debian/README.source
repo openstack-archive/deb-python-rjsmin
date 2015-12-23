@@ -1,0 +1,11 @@
+Note from the package maintainer.
+
+The below files:
+bench/jsmin.c
+bench/jsmin.py
+playground.py
+
+had mentioned: "The Software shall be used for Good, not Evil." which makes
+them non-free. They have been removed from the Debian source package.
+
+ -- Thomas Goirand <zigo@debian.org>  Tue, 22 Dec 2015 10:50:39 +0100
