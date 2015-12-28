@@ -1,3 +1,9 @@
+python-rjsmin (1.0.12+dfsg1-2) unstable; urgency=medium
+
+  * Added missing build-depends: openstack-pkg-tools (Closes: #808886).
+
+ -- Thomas Goirand <zigo@debian.org>  Mon, 28 Dec 2015 09:11:00 +0000
+
 python-rjsmin (1.0.12+dfsg1-1) unstable; urgency=medium
 
   * Initial release. (Closes: #808800)
