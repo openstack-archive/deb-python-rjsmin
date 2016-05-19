@@ -6,6 +6,9 @@ python-rjsmin (1.0.12+dfsg1-4) UNRELEASED; urgency=medium
   [ Thomas Goirand ]
   * Added debian/source.lintian-overrides.
 
+  [ Ondřej Nový ]
+  * d/rules: Changed UPSTREAM_GIT protocol to https
+
  -- Thomas Goirand <zigo@debian.org>  Thu, 10 Mar 2016 10:43:35 +0100
 
 python-rjsmin (1.0.12+dfsg1-2) unstable; urgency=medium
