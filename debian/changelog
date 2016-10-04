@@ -1,4 +1,4 @@
-python-rjsmin (1.0.12+dfsg1-4) UNRELEASED; urgency=medium
+python-rjsmin (1.0.12+dfsg1-4) unstable; urgency=medium
 
   [ Ondřej Nový ]
   * Fixed VCS URLs (https).
@@ -10,6 +10,7 @@ python-rjsmin (1.0.12+dfsg1-4) UNRELEASED; urgency=medium
   * d/rules: Changed UPSTREAM_GIT protocol to https
   * d/s/options: extend-diff-ignore of .gitreview
   * d/control: Using OpenStack's Gerrit as VCS URLs.
+  * Fix typo on long desc (Closes: #839685).
 
  -- Thomas Goirand <zigo@debian.org>  Thu, 10 Mar 2016 10:43:35 +0100
 
