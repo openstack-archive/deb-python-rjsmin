@@ -1,4 +1,4 @@
-python-rjsmin (1.0.12+dfsg1-4) UNRELEASED; urgency=medium
+python-rjsmin (1.0.12+dfsg1-4) unstable; urgency=medium
 
   [ Ondřej Nový ]
   * Fixed VCS URLs (https).
