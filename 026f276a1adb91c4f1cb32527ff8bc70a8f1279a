@@ -1,0 +1,8 @@
+Code-Review+2: Thomas Goirand <thomas@goirand.fr>
+Workflow+1: Thomas Goirand <thomas@goirand.fr>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Fri, 04 Nov 2016 23:31:35 +0000
+Reviewed-on: https://review.openstack.org/381787
+Project: openstack/deb-python-rjsmin
+Branch: refs/heads/debian/newton
